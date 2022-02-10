@@ -19,9 +19,7 @@
         "postre"
         "celiaco"
         "vegetaariano"
-        "bebida"
-        grid-row-gap: 10px;
-        text-align: center;
+        "bebida";
     }
     .mainPagesmenu h3{
         font-family: 'Roboto', sans-serif;
@@ -95,9 +93,7 @@
         grid-template-areas:
         "entrada principal"
         "celiaco vegetariano"
-        "postre bebida"
-        grid-row-gap: 15px;
-        text-align: center;
+        "postre bebida";
     }
     .mainPagesmenu h3{
         font-family: 'Roboto', sans-serif;

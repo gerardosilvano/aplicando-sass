@@ -14,11 +14,11 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "entrada" "principal" "postre" "celiaco" "vegetaariano" "bebida"; }
     .mainPagesmenu h3 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" "sans-serif";
       font-size: 1.5rem;
-      text-align: center; }
+      color: black; }
     .mainPagesmenu h4 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" sans-serif;
       font-size: 16px;
       color: #8b8a8a; }
     .mainPagesmenu div {
@@ -26,7 +26,7 @@
       padding: 10px; }
   .historia {
     flex-direction: column; }
-  .textoImagen {
+  .texto__imagen__uno {
     flex-direction: column; } }
 
 /*mobile pantalla tablet*/
@@ -40,17 +40,18 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "entrada" "principal" "postre" "celiaco" "vegetaariano" "bebida"; }
     .mainPagesmenu h3 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" sans-serif;
       font-size: 1.5rem;
+      color: black;
       text-align: center; }
     .mainPagesmenu h4 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" sans-serif;
       font-size: 16px;
       color: #8b8a8a; }
     .mainPagesmenu div {
       background-color: whitesmoke;
       padding: 10px; }
-  .textoImagen {
+  .texto__imagen__uno {
     flex-direction: column; } }
 
 /*mobile pantalla grande*/
@@ -63,13 +64,14 @@
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "entrada principal" "celiaco vegetariano" "postre bebida"; }
     .mainPagesmenu h3 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" sans-serif;
       font-size: 1.5rem;
+      color: black;
       text-align: center; }
     .mainPagesmenu h4 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      color: #8b8a8a; }
+      font-family: "roboto" sans-serif;
+      font-size: 1.5rem;
+      color: #8a8b8a; }
     .mainPagesmenu div {
       background-color: whitesmoke;
       padding: 10px; }
@@ -79,20 +81,20 @@
     display: flex;
     flex-direction: column; }
     .historia__seccion__uno {
-      display: .historia__seccion__uno display;
+      display: flex;
       flex-direction: column; }
-      .historia__seccion__uno .textoImagen {
+      .historia__seccion__uno .texto__imagen__uno {
         display: flex;
         flex-direction: row; }
     .historia__seccion__dos {
-      display: .historia__seccion__dos display;
+      display: flex;
       flex-direction: column; }
-      .historia__seccion__dos .textoImagen2 {
+      .historia__seccion__dos .texto__imagen__dos {
         display: flex;
         flex-direction: row-reverse; }
-    .historia__seccion__tres .tituloTres {
+    .historia__seccion__tres .titulo__tres {
       text-align: right; }
-    .historia__seccion__tres .textoImagen3 {
+    .historia__seccion__tres .texto__imagen__tres {
       display: flex;
       flex-direction: row;
       padding: 10px; } }
@@ -107,13 +109,14 @@
     grid-row-gap: 20px;
     text-align: center; }
     .mainPagesmenu h3 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto" sans-serif;
       font-size: 1.5rem;
+      color: black;
       text-align: center; }
     .mainPagesmenu h4 {
-      font-family: 'Roboto', sans-serif;
+      font-family: "roboto" sans-serif;
       font-size: 16px;
-      color: #8b8a8a; }
+      color: #8a8b8b; }
     .mainPagesmenu div {
       background-color: whitesmoke;
       padding: 10px; }
@@ -125,18 +128,18 @@
     .historia__seccion__uno {
       display: flex;
       flex-direction: column; }
-      .historia__seccion__uno .textoImagen {
+      .historia__seccion__uno .texto__imagen__uno {
         display: flex;
         flex-direction: row; }
     .historia__seccion__dos {
       display: flex;
       flex-direction: column; }
-      .historia__seccion__dos .textoImagen2 {
+      .historia__seccion__dos .texto__imagen__dos {
         display: flex;
         flex-direction: row-reverse; }
-    .historia__seccion__tres .tituloTres {
+    .historia__seccion__tres .titulo__tres {
       text-align: right; }
-    .historia__seccion__tres .textoImagen3 {
+    .historia__seccion__tres .texto__imagen__tres {
       display: flex;
       flex-direction: row;
       padding: 10px; } }
@@ -214,6 +217,15 @@ main {
 
 .googleMap {
   text-align: center; }
+
+.direccion .extend, .direccion p, .direccion h4, .direccion h5 {
+  margin: 15px;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.5rem;
+  color: black; }
+
+.direccion p {
+  color: #8a8b8b; }
 
 .formularioReserva {
   border: solid black 1px;

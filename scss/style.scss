@@ -6,6 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+@mixin titulos($font-family, $font-size, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
 
 /*mobile pantalla pequeña*/
 @media only screen and (max-width: 425px){
@@ -25,14 +30,10 @@
         "bebida";
 
         h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
-            text-align: center;
+            @include titulos('roboto''sans-serif', 1.5rem, black );
         }
         h4{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            color: rgb(139, 138, 138);
+            @include titulos('roboto' sans-serif, 16px, rgb(139, 138, 138) );
         }
         div{
             background-color: whitesmoke;
@@ -44,7 +45,7 @@
     .historia{
         flex-direction: column;
     }
-    .textoImagen{
+    .texto__imagen__uno{
         flex-direction: column;
     }
 }
@@ -68,14 +69,11 @@
         "bebida";
 
         h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
+            @include titulos('roboto' sans-serif, 1.5rem, black );
             text-align: center;
         }
         h4{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            color: rgb(139, 138, 138);
+            @include titulos('roboto' sans-serif, 16px, rgb(139, 138, 138) );
         }
         div{
             background-color: whitesmoke;
@@ -83,7 +81,7 @@
         }
     }
     
-    .textoImagen{
+    .texto__imagen__uno{
         flex-direction: column;
     }
 }
@@ -103,14 +101,11 @@
         "postre bebida";
 
         h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
+            @include titulos('roboto'sans-serif, 1.5rem, black);
             text-align: center;
         }
         h4{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            color: rgb(139, 138, 138);
+            @include titulos('roboto'sans-serif, 1.5rem, rgb(138, 139, 138) );
         }
         div{
             background-color: whitesmoke;
@@ -126,30 +121,30 @@
         flex-direction: column;
 
         &__seccion__uno{
-            display: &display;
+            display: $display;
             flex-direction: column;
 
-            .textoImagen{
+            .texto__imagen__uno{
                 display: $display;
                 flex-direction: row;
             }
         }
     
         &__seccion__dos{
-        display: &display;
+        display: $display;
         flex-direction: column;
 
-            .textoImagen2{
+            .texto__imagen__dos{
                 display: $display;
                 flex-direction: row-reverse;
             }
         }
     
         &__seccion__tres{
-            .tituloTres{
+            .titulo__tres{
                 text-align: right;
             }
-            .textoImagen3{
+            .texto__imagen__tres{
                 display: $display;
                 flex-direction: row;
                 padding: 10px;
@@ -170,14 +165,11 @@
         text-align: center;   
 
         h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.5rem;
+            @include titulos('Roboto' sans-serif, 1.5rem, black);
             text-align: center;
         }
         h4{
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            color: rgb(139, 138, 138);
+            @include titulos('roboto'sans-serif, 16px, rgb(138, 139, 139) );
         }
         div{
             background-color: whitesmoke;
@@ -195,7 +187,7 @@
             display: $display;
             flex-direction: column;
 
-            .textoImagen{
+            .texto__imagen__uno{
                 display: $display;
                 flex-direction: row;
             }
@@ -204,16 +196,16 @@
         &__seccion__dos{
             display: $display;
             flex-direction: column;
-            .textoImagen2{
+            .texto__imagen__dos{
                 display: $display;
                 flex-direction: row-reverse;
             }
         }
         &__seccion__tres{
-            .tituloTres{
+            .titulo__tres{
                 text-align: right;
             }
-            .textoImagen3{
+            .texto__imagen__tres{
                 display: $display;
                 flex-direction: row;
                 padding: 10px;
@@ -319,7 +311,24 @@ main{
 .googleMap{
     text-align: center;
 }
-
+.direccion{
+    .extend{
+        margin: 15px;
+        font-family: 'roboto', sans-serif;
+        font-size: 1.5rem;
+        color: black;
+    }
+    p{
+        @extend .extend;
+        color: rgb(138, 139, 139);
+    }
+    h4{
+        @extend .extend;
+    }
+    h5{
+        @extend .extend;
+    }
+}
 .formularioReserva{
     border: solid black 1px;
     background-color: blanchedalmond;
